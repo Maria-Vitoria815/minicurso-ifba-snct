@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Fanfics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crie sua Fanfic</h1>
+        <form action="#" method="POST" enctype="multipart/form-data" class="fanfic-form">
+            <!-- Título da fanfic -->
+            <div class="form-group">
+                <label for="titulo">Título da Fanfic</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Insira o título da fanfic" required>
+            </div>
+
+            <!-- Sinopse -->
+            <div class="form-group">
+                <label for="sinopse">Sinopse</label>
+                <textarea id="sinopse" name="sinopse" rows="5" placeholder="Escreva um resumo da sua história" required></textarea>
+            </div>
+
+            <!-- Tags -->
+            <div class="form-group">
+                <label for="tags">Tags (separe com vírgula)</label>
+                <input type="text" id="tags" name="tags" placeholder="Ex.: Romance, Ação, Slice of Life" required>
+            </div>
+
+            <!-- Upload de Capa -->
+            <div class="form-group">
+                <label for="capa">Upload da Capa</label>
+                <input type="file" id="capa" name="capa" accept="image/*">
+            </div>
+
+            <!-- Editor de Texto para a Fanfic -->
+            <div class="form-group">
+                <label for="capitulo">Capítulo</label>
+                <textarea id="capitulo" name="capitulo" rows="15" placeholder="Escreva o primeiro capítulo aqui..." required></textarea>
+            </div>
+
+            <!-- Botões -->
+            <div class="form-group button-group">
+                <button type="submit" class="btn">Publicar Fanfic</button>
+                <button type="reset" class="btn">Salvar como Rascunho</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
